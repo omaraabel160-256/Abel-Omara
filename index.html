@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The personal website of Omara Abel, an ICT enthusiast from Uganda.">
+  <title>Omara Abel | ICT & Technology</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #172033;
+      line-height: 1.7;
+    }
+    header {
+      background: #071a38;
+      color: white;
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header h2 { margin: 0; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+    .hero {
+      padding: 75px 7%;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #075985, #172554);
+    }
+    .hero h1 { font-size: clamp(32px, 6vw, 55px); margin: 0; }
+    .hero p { max-width: 680px; margin: 18px auto; }
+    .button {
+      display: inline-block;
+      background: #fbbf24;
+      color: #172033;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    main { max-width: 1050px; margin: auto; padding: 35px 20px; }
+    section {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      box-shadow: 0 5px 20px #0f172a0d;
+    }
+    h2 { color: #075985; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #eff6ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #071a38;
+      color: white;
+    }
+    a { overflow-wrap: anywhere; }
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav a { margin: 0 7px; }
+      .hero { padding: 55px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Omara Abel</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">ICT</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to Omara Abel's Website</h1>
+    <p>Learning, creating and growing through Information and Communication Technology. A journey driven by curiosity, practical skills and determination.</p>
+    <a class="button" href="#about">Discover My Journey</a>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello and welcome! I am Omara Abel, an ICT enthusiast from Uganda with an interest in computers, technology and practical problem-solving.</p>
+      <p>This website is my space to share my learning journey, technology interests, future ambitions and ideas for collaboration.</p>
+    </section>
+
+    <section id="skills">
+      <h2>My ICT Interests</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Computer Systems</h3>
+          <p>Learning about computer hardware, software, installation and troubleshooting.</p>
+        </div>
+        <div class="card">
+          <h3>Networking</h3>
+          <p>Exploring how computers connect, communicate and share information.</p>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Building websites and improving practical digital skills through projects.</p>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity</h3>
+          <p>Learning about safe computing, privacy, passwords and responsible technology use.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="goals">
+      <h2>My Vision and Goals</h2>
+      <p>My goal is to keep learning, build useful technology projects and develop the discipline needed to serve my community and contribute to Uganda's development.</p>
+      <p><strong>Dream. Plan. Work. Achieve.</strong> Every skill learned is a step toward the future.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Connect With Me</h2>
+      <p>For genuine networking, learning and collaboration:</p>
+      <p>Email: <a href="mailto:abeldele2@gmail.com">abeldele2@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/omaraabel160-256">View my GitHub profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Omara Abel | Personal ICT Website</p>
+    <p>Built with curiosity, purpose and determination.</p>
+  </footer>
+</body>
+</html>
