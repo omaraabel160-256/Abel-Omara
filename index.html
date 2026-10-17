@@ -1,150 +1,27 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The personal website of Omara Abel, an ICT enthusiast from Uganda.">
-  <title>Omara Abel | ICT & Technology</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f1f5f9;
-      color: #172033;
-      line-height: 1.7;
-    }
-    header {
-      background: #071a38;
-      color: white;
-      padding: 22px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    header h2 { margin: 0; }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-    }
-    .hero {
-      padding: 75px 7%;
-      text-align: center;
-      color: white;
-      background: linear-gradient(135deg, #075985, #172554);
-    }
-    .hero h1 { font-size: clamp(32px, 6vw, 55px); margin: 0; }
-    .hero p { max-width: 680px; margin: 18px auto; }
-    .button {
-      display: inline-block;
-      background: #fbbf24;
-      color: #172033;
-      padding: 12px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 12px;
-    }
-    main { max-width: 1050px; margin: auto; padding: 35px 20px; }
-    section {
-      background: white;
-      padding: 25px;
-      border-radius: 14px;
-      margin-bottom: 25px;
-      box-shadow: 0 5px 20px #0f172a0d;
-    }
-    h2 { color: #075985; }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: #eff6ff;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #071a38;
-      color: white;
-    }
-    a { overflow-wrap: anywhere; }
-    @media (max-width: 600px) {
-      header { justify-content: center; text-align: center; }
-      nav a { margin: 0 7px; }
-      .hero { padding: 55px 6%; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Abel Omara provides ICT troubleshooting, Windows installation, web design, networking and software support in Uganda's Lango sub-region.">
+<meta name="theme-color" content="#071a38">
+<title>Abel Omara | ICT Troubleshooting & Web Design</title>
+<style>
+:root{--navy:#061a35;--blue:#0878df;--cyan:#19d5f5;--green:#06d879;--gold:#ffc629;--ink:#10213c;--muted:#5c6b82;--paper:#f4f8fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}a{color:inherit}header{position:sticky;top:0;z-index:10;background:#061a35f5;color:white;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff20}.nav{max-width:1200px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.brand{font-weight:900;font-size:1.12rem;line-height:1.15}.brand span{color:var(--cyan)}.brand small{display:block;font-size:.72rem;letter-spacing:.1em;color:#d7e7ff;margin-top:4px}.navlinks{display:flex;gap:20px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-weight:700;font-size:.92rem}.navlinks a:hover{color:var(--cyan)}.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:999px;text-decoration:none;font-weight:800;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}.pill:hover{transform:translateY(-2px);box-shadow:0 9px 22px #001c4530}.whatsapp{background:var(--green);color:#052b20}.outline{border:1px solid #a8dfff;color:white}.hero{background:radial-gradient(circle at 75% 20%,#1265a6 0,#092e57 34%,#041326 78%);color:white;overflow:hidden}.hero-inner{max-width:1200px;margin:auto;padding:68px 22px 72px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:36px}.eyebrow{display:inline-block;border:1px solid #19d5f5a6;background:#19d5f51c;color:#a7f3ff;border-radius:999px;padding:6px 13px;font-size:.88rem;font-weight:800}.hero h1{font-size:clamp(2.6rem,5vw,4.6rem);line-height:1.03;letter-spacing:-.045em;margin:18px 0}.hero h1 span{color:var(--cyan)}.hero h2{font-size:clamp(1.5rem,3vw,2.25rem);color:var(--gold);font-style:italic;margin:0 0 16px}.hero p{color:#dce9f8;max-width:620px;font-size:1.07rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.quickcontact{display:flex;flex-wrap:wrap;gap:12px 20px;color:#e6f3ff;font-size:.91rem}.quickcontact a{text-decoration:none}.portrait-wrap{position:relative;min-height:350px;display:flex;align-items:center;justify-content:center}.portrait-frame{width:min(100%,420px);height:440px;border-radius:28px;border:1px solid #ffffff35;background:linear-gradient(135deg,#0a91c9,#12294c);box-shadow:0 24px 60px #0006;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;overflow:hidden}.portrait-frame .portrait-placeholder{max-width:270px;color:#e7f7ff}.portrait-placeholder .monogram{width:100px;height:100px;border-radius:50%;display:grid;place-items:center;margin:0 auto 20px;background:#ffffff18;border:2px solid #ffffff70;font-size:2.4rem;font-weight:900;color:white}.portrait-placeholder p{font-size:.9rem;color:#d4edff}.quote{position:absolute;bottom:5px;left:0;background:var(--gold);color:#172033;padding:12px 18px;border-radius:12px;font-weight:900;box-shadow:0 12px 30px #0004;transform:rotate(-2deg)}section{scroll-margin-top:90px}.section{max-width:1200px;margin:auto;padding:54px 22px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px}.kicker{color:#0878df;text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:900}.section h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.12;margin:5px 0;color:var(--navy)}.section-heading p{color:var(--muted);max-width:520px;margin:0}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:white;border:1px solid #e2ebf6;border-radius:18px;padding:22px;box-shadow:0 8px 28px #10213c0b;transition:transform .2s,border-color .2s}.service:hover{transform:translateY(-5px);border-color:#75c9ff}.service .icon{width:54px;height:54px;border-radius:16px;background:#e4f4ff;display:grid;place-items:center;font-size:1.7rem}.service h3{margin:16px 0 7px;color:#0757a7}.service p{margin:0;color:var(--muted);font-size:.94rem}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:white;border:1px solid #e1eaf5;border-radius:20px;padding:28px;box-shadow:0 8px 28px #10213c0a}.checklist{padding:0;list-style:none}.checklist li{margin:10px 0}.checklist li:before{content:"✓";color:#009b68;font-weight:900;margin-right:10px}.community{background:linear-gradient(120deg,#06254b,#074d81);color:white;border-radius:24px;padding:34px;display:grid;grid-template-columns:1fr .9fr;gap:25px;align-items:center;box-shadow:0 18px 42px #0a315024}.community h2{color:white}.community p{color:#d9eaff}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:700;font-size:.87rem}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #ccd9e8;border-radius:10px;font:inherit;color:var(--ink);background:white}.field textarea{min-height:105px;resize:vertical}.formnote{font-size:.78rem;color:#d2e6fb}.submit{background:var(--gold);color:#172033;width:100%;font:inherit}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.contact-card{background:white;padding:20px;border-radius:15px;border:1px solid #e1eaf5}.contact-card strong{display:block;margin-bottom:6px;color:#0757a7}.contact-card a{overflow-wrap:anywhere;text-decoration:none}.contact-card a:hover{text-decoration:underline}footer{background:#031126;color:#c9d8e9;padding:28px 22px;text-align:center}footer strong{color:white}footer p{margin:5px} .fine{font-size:.78rem;color:#9db0c9}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.portrait-wrap{min-height:260px}.portrait-frame{height:320px}.services{grid-template-columns:repeat(2,1fr)}.community{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.nav{justify-content:center;text-align:center}.navlinks{justify-content:center;gap:12px}.navlinks a{font-size:.82rem}.hero-inner{padding-top:45px}.portrait-frame{height:280px}.services,.contact-grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.section{padding:40px 16px}.community{padding:24px}}
+</style>
 </head>
 <body>
-  <header>
-    <h2>Omara Abel</h2>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">ICT</a>
-      <a href="#goals">Goals</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <div class="hero">
-    <h1>Welcome to Omara Abel's Website</h1>
-    <p>Learning, creating and growing through Information and Communication Technology. A journey driven by curiosity, practical skills and determination.</p>
-    <a class="button" href="#about">Discover My Journey</a>
-  </div>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello and welcome! I am Omara Abel, an ICT enthusiast from Uganda with an interest in computers, technology and practical problem-solving.</p>
-      <p>This website is my space to share my learning journey, technology interests, future ambitions and ideas for collaboration.</p>
-    </section>
-
-    <section id="skills">
-      <h2>My ICT Interests</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Computer Systems</h3>
-          <p>Learning about computer hardware, software, installation and troubleshooting.</p>
-        </div>
-        <div class="card">
-          <h3>Networking</h3>
-          <p>Exploring how computers connect, communicate and share information.</p>
-        </div>
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>Building websites and improving practical digital skills through projects.</p>
-        </div>
-        <div class="card">
-          <h3>Cybersecurity</h3>
-          <p>Learning about safe computing, privacy, passwords and responsible technology use.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="goals">
-      <h2>My Vision and Goals</h2>
-      <p>My goal is to keep learning, build useful technology projects and develop the discipline needed to serve my community and contribute to Uganda's development.</p>
-      <p><strong>Dream. Plan. Work. Achieve.</strong> Every skill learned is a step toward the future.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Connect With Me</h2>
-      <p>For genuine networking, learning and collaboration:</p>
-      <p>Email: <a href="mailto:abeldele2@gmail.com">abeldele2@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/omaraabel160-256">View my GitHub profile</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Omara Abel | Personal ICT Website</p>
-    <p>Built with curiosity, purpose and determination.</p>
-  </footer>
-</body>
-</html>
+<header><div class="nav"><a href="#home" class="brand" style="text-decoration:none">ABEL <span>OMARA</span><small>ICT TROUBLESHOOTING • WEB DESIGN</small></a><nav class="navlinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#community">Your Views</a><a href="#contact">Contact</a></nav><a class="pill whatsapp" href="https://wa.me/256764025986?text=Hello%20Abel%2C%20I%20need%20ICT%20support" target="_blank" rel="noopener">☏ Chat on WhatsApp</a></div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner"><div><span class="eyebrow">Professional ICT support in Uganda</span><h1>Hi, I'm <span>Abel Omara</span></h1><h2>Technology. Solutions. Progress.</h2><p>I help individuals, businesses and community organizations solve ICT problems, install Windows, build modern websites and connect their digital world—with clear communication and practical support.</p><div class="actions"><a class="pill whatsapp" href="https://wa.me/256764025986?text=Hello%20Abel%2C%20I%20need%20ICT%20support" target="_blank" rel="noopener">☏ Chat on WhatsApp</a><a class="pill outline" href="#services">Explore my services ↓</a></div><div class="quickcontact"><span>📍 Uganda • Lango Sub-region</span><span>☎ <a href="tel:+256764025986">+256 764 025986</a></span><span>☎ <a href="tel:+256740403048">+256 740 403048</a></span><span>✉ <a href="mailto:omaraabel160@gmail.com">omaraabel160@gmail.com</a></span></div></div><div class="portrait-wrap"><div class="portrait-frame"><div class="portrait-placeholder"><div class="monogram">AO</div><strong>ABEL OMARA</strong><p>Administrator • ICT Troubleshooting & Web Design</p><p>Portrait photo area — add your original photo file to the site’s images folder to display it here.</p></div></div><div class="quote">DREAM • PLAN • WORK • ACHIEVE</div></div></div></section>
+<section class="section" id="services"><div class="section-heading"><div><span class="kicker">My services</span><h2>Practical ICT solutions for you</h2></div><p>Reliable digital help for everyday technology challenges and new ideas.</p></div><div class="services"><article class="service"><div class="icon">🪟</div><h3>Windows Installation & Troubleshooting</h3><p>Windows setup, installation guidance, startup errors, driver issues and common PC software problems.</p></article><article class="service"><div class="icon">🌐</div><h3>Web Design</h3><p>Modern, mobile-friendly websites for individuals, small businesses and community projects.</p></article><article class="service"><div class="icon">📡</div><h3>Networking</h3><p>Wi-Fi and router setup, connectivity troubleshooting and practical network configuration.</p></article><article class="service"><div class="icon">🛠️</div><h3>Software Troubleshooting</h3><p>Help diagnosing software errors, installing applications and resolving common system issues.</p></article></div></section>
+<section class="section" id="about"><div class="about-grid"><article class="panel"><span class="kicker">Meet your ICT contact</span><h2>About Abel Omara</h2><p>I’m an ICT enthusiast focused on troubleshooting, web design, creativity and practical problem-solving. My aim is to help people use technology with greater confidence and turn useful ideas into digital solutions.</p><p><strong>My approach:</strong> listen carefully, explain clearly and work toward a practical solution.</p></article><article class="panel"><span class="kicker">What you can expect</span><h2>Why connect with me?</h2><ul class="checklist"><li>Clear and respectful communication</li><li>Practical support tailored to your needs</li><li>Mobile-friendly website design</li><li>Community-minded service across the Lango sub-region</li><li>Direct contact by phone, email or WhatsApp</li></ul></article></div></section>
+<section class="section" id="community"><div class="community"><div><span class="kicker" style="color:#80e9ff">Your voice matters</span><h2>Dear public and residents — let’s hear from you!</h2><p>Which district, town, or community do you live in? What ICT services would you like to see offered in your area? Share your suggestions, questions or ideas to help make this website and its services more useful to the community.</p><p class="formnote">Please share only information you are comfortable making public. Your location can be a district or town; a full home address is not needed.</p></div><form id="communityForm"><div class="formgrid"><div class="field"><label for="residentName">Your name (optional)</label><input id="residentName" name="name" placeholder="Name or nickname"></div><div class="field"><label for="residentArea">District / town / area *</label><input id="residentArea" name="area" placeholder="e.g. Kwania, Lira" required></div><div class="field full"><label for="residentService">What service do you need?</label><select id="residentService" name="service"><option>Windows installation / troubleshooting</option><option>Web design</option><option>Networking / Wi-Fi</option><option>Software troubleshooting</option><option>Other ICT service</option><option>General suggestion</option></select></div><div class="field full"><label for="residentMessage">Your suggestion or message *</label><textarea id="residentMessage" name="message" placeholder="Tell us what you need or would like improved..." required></textarea></div><div class="field full"><button class="pill submit" type="submit">Send your views via WhatsApp ↗</button></div></div></form></div></section>
+<section class="section" id="contact"><div class="section-heading"><div><span class="kicker">Get in touch</span><h2>Let’s solve your tech problem</h2></div><p>Contact me about ICT support, web design or a collaboration idea.</p></div><div class="contact-grid"><div class="contact-card"><strong>📱 Phone / WhatsApp</strong><a href="tel:+256764025986">+256 764 025986</a><br><a href="tel:+256740403048">+256 740 403048</a></div><div class="contact-card"><strong>✉ Email</strong><a href="mailto:omaraabel160@gmail.com">omaraabel160@gmail.com</a><br><a href="mailto:abelomara7@gmail.com">abelomara7@gmail.com</a><br><a href="mailto:deleabel2@gmail.com">deleabel2@gmail.com</a></div><div class="contact-card"><strong>📍 Service area</strong>Uganda — Lango Sub-region<br><a href="https://github.com/omaraabel160-256/Abel-Omara" target="_blank" rel="noopener">Website repository on GitHub ↗</a></div></div></section>
+</main><footer><p><strong>ABEL OMARA • ICT TROUBLESHOOTING</strong></p><p>Technology | Innovation | Community</p><p class="fine">© 2026 Abel Omara. Thank you for visiting.</p></footer>
+<script>
+document.getElementById('communityForm').addEventListener('submit',function(e){e.preventDefault();const name=document.getElementById('residentName').value.trim()||'A community member';const area=document.getElementById('residentArea').value.trim();const service=document.getElementById('residentService').value;const message=document.getElementById('residentMessage').value.trim();const text='Hello Abel, I am sharing feedback through your website.%0AName: '+encodeURIComponent(name)+'%0AArea / district: '+encodeURIComponent(area)+'%0AService or topic: '+encodeURIComponent(service)+'%0AMessage: '+encodeURIComponent(message);window.open('https://wa.me/256764025986?text='+text,'_blank','noopener');});
+</script>
+</body></html>
